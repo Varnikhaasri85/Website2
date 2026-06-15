@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Appliances</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    background:#055f28;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:lightgreen;
+}
+
+
+.hero{
+    height:90vh;
+    background:url("home appliances.jpg") no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#055f28;
+    margin-bottom:20px;
+}
+
+section p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#055f28;
+    margin:15px 0;
+    text-align:center;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.service-box{
+    background:#055f28;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.service-box h3{
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+    line-height:2;
+}
+
+footer{
+    background:#055f28;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:35px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Home Appliances</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+<h1>Welcome to Home Appliances</h1>
+
+<p>Quality Appliances for a Smarter and Comfortable Home</p>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+We provide high-quality home appliances that make everyday life easier.
+From refrigerators and washing machines to smart TVs and kitchen appliances,
+our products are designed for performance, reliability, and affordability.
+</p>
+
+</section>
+
+
+<section id="products">
+
+<h2>Featured Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="refrigerator.jpg">
+<h3>Refrigerator</h3>
+<p>Energy-efficient refrigerators with modern cooling technology.</p>
+</div>
+
+<div class="card">
+<img src="washing machine.jpg">
+<h3>Washing Machine</h3>
+<p>Fully automatic washing machines for effortless laundry.</p>
+</div>
+
+<div class="card">
+<img src="smart tv.jpg">
+<h3>Smart TV</h3>
+<p>Experience entertainment with crystal-clear picture quality.</p>
+</div>
+
+<div class="card">
+<img src="microwave oven.jpg">
+<h3>Microwave Oven</h3>
+<p>Fast cooking with advanced heating technology.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>🚚 Fast Delivery</h3>
+<p>Quick and safe delivery to your doorstep.</p>
+</div>
+
+<div class="service-box">
+<h3>🛠 Installation</h3>
+<p>Professional installation for every product.</p>
+</div>
+
+<div class="service-box">
+<h3>🛡 Warranty</h3>
+<p>Reliable warranty and quality assurance.</p>
+</div>
+
+<div class="service-box">
+<h3>📞 24/7 Support</h3>
+<p>Customer care available whenever you need help.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+<p><strong>📍 Address:</strong> Rajaplayam, Tamil Nadu</p>
+
+<p><strong>📞 Phone:</strong> +91 92929 19191</p>
+
+<p><strong>✉ Email:</strong> info@homeappliances.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Home Appliances. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
